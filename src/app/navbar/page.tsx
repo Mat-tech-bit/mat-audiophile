@@ -47,7 +47,7 @@ export default function Navbar() {
             <Typography variant="h6" sx={{ flexGrow: 1 }}>
           audiophile
         </Typography>
-            <ThemeToggleButton/>
+            {/* <ThemeToggleButton/> */}
 
             {/* Drawer Menu */}
             <Drawer anchor="left" open={open} onClose={handleDrawerToggle}>
@@ -81,7 +81,12 @@ export default function Navbar() {
             ))}
           </Box>
         )}
+        <Link href={"/cart"}>
+        <Button>
       <AddShoppingCart />
+      </Button>
+      </Link>
+        <ThemeToggleButton/>
       </Toolbar>
     </AppBar>
   )

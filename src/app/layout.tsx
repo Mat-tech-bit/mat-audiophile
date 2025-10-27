@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-import { Roboto } from 'next/font/google';
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import { Roboto } from "next/font/google";
 
 import Navbar from "./navbar/page";
 import { ThemeToggleProvider } from "./theme/page";
-
+import Footer from "./footer/page";
+import { CartProvider } from "./cartcontext/cartContext";
 
 const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto',
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
 });
-
-
 
 
 export const metadata: Metadata = {
@@ -36,11 +35,13 @@ export default function RootLayout({
       <body>
         <AppRouterCacheProvider>
           <ThemeToggleProvider>
-            <Navbar/>
-                {children}
+            <Navbar />
+            <CartProvider>
+            {children}
+            </CartProvider>
+            <Footer />
           </ThemeToggleProvider>
         </AppRouterCacheProvider>
-       
       </body>
     </html>
   );
