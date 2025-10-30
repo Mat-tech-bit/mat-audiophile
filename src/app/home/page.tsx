@@ -174,10 +174,12 @@ const Home = () => {
           gap: 3,
           justifyContent: "center",
           mt: 10,
+          mb: 7,
+          mx: 3
         }}
       >
         {/* TEXT */}
-        <Box sx={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Box sx={{ flex: 1, justifyContent: "center", alignItems: "center", gap: 3 }}>
           <Typography variant="h5" sx={{ mb: 3 }}>
             {" "}
             BRINGING YOU THE <span style={{ color: "orange" }}>BEST </span>{" "}
