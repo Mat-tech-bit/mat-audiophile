@@ -12,6 +12,7 @@ import {
   useTheme,
 } from "@mui/material";
 import React from "react";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Home = () => {
   const theme = useTheme();
@@ -150,6 +151,7 @@ const Home = () => {
                   <Typography fontWeight={600}>{product.name}</Typography>
                 </CardContent>
                 <Button
+                endIcon={<ArrowForwardIosIcon/>}
                   href={product.link}
                   sx={{
                     bgcolor: "orange",
@@ -158,7 +160,7 @@ const Home = () => {
                     "&:hover": { bgcolor: "#e69500" },
                   }}
                 >
-                  SEE PRODUCT
+                  SHOP
                 </Button>
               </Card>
             </Grid>
