@@ -36,7 +36,7 @@ export default function Navbar() {
   ]
 
   return (
-    <AppBar position="static" sx={{bgcolor: "black", borderBottom: "1px solid white", pl: "40px", pr: "40px"}}>
+    <AppBar position="sticky" sx={{bgcolor: "black", borderBottom: "1px solid white", pl: "40px", pr: "40px"}}>
       <Toolbar>
         {isMobile ? (
           <>
