@@ -70,7 +70,7 @@ const HeadPhones = () => {
             <Grid container spacing={2}>
               {headphones.map((product) => (
                 <Grid key={product.id} size={{ xs: 12, sm: 6, md: 3, lg: 3 }}>
-                  <Card>
+                  <Card sx={{textAlign: "center"}}>
                     <Link href={`/headphones/${product.id}`}
                          style={{ textDecoration: "none", color: "inherit" }}
                        >
@@ -85,7 +85,7 @@ const HeadPhones = () => {
                       }}
                     />
                     <CardContent>
-                      <Typography>{product.name}</Typography>
+                      <Typography fontWeight="bold">{product.name}</Typography>
                       <Typography>pinnacle of pristine audio</Typography>
                       <Rating
                         name="full-rating"
@@ -94,12 +94,14 @@ const HeadPhones = () => {
                       />
                     </CardContent>
                     </Link>
+                    <Box sx={{display: "flex", justifyContent: "center", pb: 3}}>
                      <Counter
                         id={product.id}
                         name={product.name}
                         price={product.price}
                         image={product.image}
                       />
+                      </Box>
                   </Card>
                 </Grid>
               ))}

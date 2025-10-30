@@ -13,7 +13,7 @@ export type Product = {
 export const Products: Product[] = [
     {
     id: 1,
-    name: "BOSS",
+    name: "Shure SRH840A",
     category: "headphones",
     price: 30.22,
     image: "/audiophile/headphones/headphone1.jpg",

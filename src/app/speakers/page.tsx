@@ -70,7 +70,7 @@ const Speakers = () => {
             <Grid container spacing={2}>
               {speakers.map((product) => (
                 <Grid key={product.id} size={{ xs: 12, sm: 6, md: 3, lg: 3 }}>
-                  <Card>
+                  <Card sx={{textAlign: "center"}}>
                      <Link href={`/speakers/${product.id}`}
                          style={{ textDecoration: "none", color: "inherit" }}
                        >
@@ -85,7 +85,7 @@ const Speakers = () => {
                       }}
                     />
                     <CardContent>
-                      <Typography>{product.name}</Typography>
+                      <Typography fontWeight="bold">{product.name}</Typography>
                       <Typography>
                         seamless steaming and longlasting-performance
                       </Typography>
@@ -96,12 +96,14 @@ const Speakers = () => {
                       />
                     </CardContent>
                     </Link>
-                      <Counter
+                       <Box sx={{display: "flex", justifyContent: "center", pb: 3}}>
+                     <Counter
                         id={product.id}
                         name={product.name}
                         price={product.price}
                         image={product.image}
                       />
+                      </Box>
                   </Card>
                 </Grid>
               ))}

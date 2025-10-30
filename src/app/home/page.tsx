@@ -22,19 +22,19 @@ const Home = () => {
   const products = [
     {
       id: 1,
-      name: "Zebronics Headphones",
+      name: "Shure SRH840A",
       image: "/audiophile/headphones/headphone1.jpg",
       link: "/headphones",
     },
     {
       id: 2,
-      name: "Zebronics Earphones",
+      name: "Groovee",
       image: "/audiophile/earphones/earphone1.jpg",
       link: "/earphones",
     },
     {
       id: 3,
-      name: "Zebronics Speaker",
+      name: "Ultimate Ears MEGABOOM 3",
       image: "/audiophile/speakers/speaker1.jpg",
       link: "/speakers",
     },
@@ -71,7 +71,7 @@ const Home = () => {
             made for the passionate music enthusiast.
           </Typography>
 
-          <Button sx={{ bgcolor: "orange", mt: 2, color: "white" }}>
+          <Button href="/headphones" sx={{ bgcolor: "orange", mt: 2, color: "white" }}>
             SEE PRODUCT
           </Button>
         </Box>
