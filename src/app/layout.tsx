@@ -10,7 +10,7 @@ import { Roboto } from "next/font/google";
 import Navbar from "./navbar/page";
 import { ThemeToggleProvider } from "./theme/page";
 import Footer from "./footer/page";
-import { CartProvider } from "./cartcontext/cartContext";
+import { CartProvider } from "./cartcontext/page";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],

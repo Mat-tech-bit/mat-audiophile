@@ -82,8 +82,8 @@ export default function Navbar() {
           </Box>
         )}
         <Link href={"/cart"}>
-        <Button>
-      <AddShoppingCart />
+        <Button sx={{color: "white"}} >
+      <AddShoppingCart/>
       </Button>
       </Link>
         <ThemeToggleButton/>

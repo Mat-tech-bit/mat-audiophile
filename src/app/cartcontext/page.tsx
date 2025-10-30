@@ -6,6 +6,7 @@ type CartItem = {
   name: string;
   price: number;
   quantity: number;
+  image: string;
 };
 
 type CartContextType = {
@@ -84,3 +85,6 @@ export const useCart = () => {
     throw new Error("useCart must be used within a CartProvider");
   return context;
 };
+
+
+export default CartProvider;
