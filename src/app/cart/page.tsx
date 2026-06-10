@@ -1,9 +1,9 @@
 "use client";
 import { Box, Button, Typography } from "@mui/material";
 import { useCart } from "../cartcontext/page";
-import Checkout from "../form/page";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { useRouter } from "next/navigation";
+import Checkout from "../form/page";
 
 const CartPage = () => {
   const { cart, removeFromCart, clearCart, getTotalPrice, getTotalItems } =
